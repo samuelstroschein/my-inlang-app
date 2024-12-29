@@ -1,0 +1,7 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "welcome_title": "Welcome to Inlang!",
+  "main_page_paragraph": "Inlang is a platform that makes it easy to manage translations for your projects.",
+  "about_us_title": "About Us",
+  "about_us_paragraph": "We are a team of developers who are passionate about making localization easier for developers. We believe that localization should be a seamless part of the development process, not an afterthought. That's why we created Inlang, a platform that makes it easy to manage translations for your projects."
+}

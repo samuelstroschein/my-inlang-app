@@ -1,0 +1,7 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "welcome_title": "Willkommen bei Inlang!",
+  "main_page_paragraph": "Inlang ist eine Plattform, die es einfach macht, Übersetzungen für Ihre Projekte zu verwalten.",
+  "about_us_title": "Über uns",
+  "about_us_paragraph": "Wir sind ein Team von Entwicklern, die sich leidenschaftlich dafür einsetzen, die Lokalisierung für Entwickler einfacher zu machen. Wir glauben, dass Lokalisierung ein nahtloser Bestandteil des Entwicklungsprozesses sein sollte, nicht ein Nachgedanke. Deshalb haben wir Inlang entwickelt, eine Plattform, die es einfach macht, Übersetzungen für Ihre Projekte zu verwalten."
+}
