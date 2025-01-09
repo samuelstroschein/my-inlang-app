@@ -1,9 +1,29 @@
+<script lang="ts">
+  import type { AvailableLocale } from "$lib/paraglide/runtime";
+  import {
+    defineSetLocale,
+    defineGetLocale,
+    baseLocale,
+    getLocale,
+  } from "$lib/paraglide/runtime";
 
-<script>
-    import { ParaglideJS } from "@inlang/paraglide-sveltekit"
-    import { i18n } from "$lib/i18n"
+  const { children } = $props();
+
+  let currentLocale = $state(getLocale());
+
+  defineGetLocale(() => {
+    if (import.meta.env.SSR) {
+      return baseLocale;
+    }
+    return (localStorage.getItem("locale") as AvailableLocale) ?? baseLocale;
+  });
+
+  defineSetLocale((newLocale) => {
+    localStorage.setItem("locale", newLocale);
+    currentLocale = newLocale;
+  });
 </script>
 
-<ParaglideJS {i18n}>
-    <slot />
-</ParaglideJS>
+{#key currentLocale}
+  {@render children?.()}
+{/key}
